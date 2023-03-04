@@ -69,13 +69,13 @@ li{
 
 <script>
 function myFunction() {
-    let input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
+ 
+    let input = document.getElementById("myInput");
+    let   filter = input.value.toUpperCase();
+    let  ul = document.getElementById("myUL");
+    let li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("span")[0];
+      let   a = li[i].getElementsByTagName("span")[0];
         
         txtValue = a.textContent || a.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
